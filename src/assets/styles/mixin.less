@@ -1,0 +1,29 @@
+/**
+ * 雪碧图定位base
+ * @param  {[type]} @positionX:12px [description]
+ * @param  {[type]} @positionY:0px  [description]
+ * @return {[type]}                 [description]
+ */
+.menu-spriteicon(@positionX:12px,@positionY:0px){
+  width: 100px;
+  height: 80px;
+  right: auto;
+  background-position: @positionX @positionY;
+  display: inline-block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-image: ~"url('../../assets/images/main_icons.png')";
+  cursor: pointer;
+}
+
+.menu-pickup-spriteicon(@positionX:12px,@positionY:-26px){
+  width: 80px;
+  height: 80px;
+  right: auto;
+  background-position: @positionX @positionY;
+  display: inline-block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-image: ~"url('../../assets/images/pickup_icons.png')";
+  cursor: pointer;
+}

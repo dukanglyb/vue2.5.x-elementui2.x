@@ -1,0 +1,264 @@
+@import "variable.less";
+
+html{
+	line-height: 1;
+	font-family: Microsoft YaHei,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,SimSun,sans-serif;
+	//user-select: none; //禁止页面复制功能的样式属性
+	-webkit-tap-highlight-color: transparent;
+	background: @color-background;
+	color: @color-text;
+  overflow: hidden;
+}
+html,body{
+  height: 100%;
+}
+
+.none{
+  display: none!important;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.pd0{
+  padding: 0!important;
+}
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.tc{
+	text-align: center!important;
+}
+
+.tr{
+  text-align: right!important;
+}
+
+.header-fold {
+  .header-left {
+    flex: 0 0 @flex-width-fold !important;
+  }
+}
+
+.index{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: ~"url('../../assets/images/banner.png')" no-repeat;
+  background-size: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .first-page{
+    width: @versionheartwidth;
+    margin: 0 auto;
+    height: 100%;
+    display: table;
+    .jianjie{
+      height: 100%;
+      line-height: 100%;
+      color: @white;
+      text-align: center;
+      display:table-cell;
+      vertical-align:middle;
+      p{
+        text-indent: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+  .project-detail{
+    width: @versionheartwidth;
+    margin: 0 auto;
+    height: 100%;
+    color: @white;
+    display: table;
+    .detail-content{
+      display:table-cell;
+      vertical-align:middle;
+      .project-title{
+        padding-bottom: 30px;
+        font-size: 32px;
+        font-weight: bold;
+      }
+      .project-des{
+        font-size: 16px;
+        line-height: 30px;
+        padding: 15px 0;
+      }
+      .project-block{
+        display: flex;
+        padding: 30px 0;
+        .project-item{
+          flex: 1;
+          display: flex;
+          .item-icon{
+            flex: 0 0 100px;
+            .fa{
+              font-size: 52px;
+            }
+          }
+          .item-leftcontent{
+            flex: 1;
+            .item-title{
+              font-size: 20px;
+            }
+            .item-des{
+              padding-top: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about-us{
+    width: @versionheartwidth;
+    margin: 0 auto;
+    height: 100%;
+    display: table;
+    color:@white;
+    .aboutus-content{
+      display:table-cell;
+      vertical-align:middle;
+      p{
+        text-indent: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+.index-header{
+  width: 100%;
+  position: fixed;
+  top:0;
+  .nav-wrapper{
+    position: relative;
+    color: @white;
+    width: @versionheartwidth;
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 70px;
+    .nav-logo{
+      display: inline-block;
+      line-height: 70px;
+      font-size: 32px;
+      width: 200px;
+      cursor: pointer;
+    }
+    .nav-menus{
+      display: inline-block;
+      position: absolute;
+      margin-top: 25px;
+      height: 32px;
+      .nav-item{
+        display: inline-block;
+        text-align: center;
+        padding: 0 15px;
+        height: 100%;
+        font-size: @header-fontsize;
+        input {
+          display: none;
+        }
+        input[type=radio]:checked + label {
+          display: block;
+          height: 100%;
+          font-size: @header-fontsize;
+          cursor: pointer;
+          color: @blue;
+          border-bottom:3px solid @blue;
+          font-weight:500;
+        }
+        label {
+          display: inline-block;
+          margin: 0;
+          font-size: @header-fontsize;
+          height: 100%;
+          cursor: pointer;
+          text-overflow: ellipsis;
+          font-weight:500;
+        }
+      }
+    }
+    .nav-login{
+      display: inline-block;
+      float: right;
+      line-height: 70px;
+      button{
+        width: 80px;
+        border-radius: 25px;
+        background-color: rgba(255,255,255,.1);
+        color: @white;
+        &:hover,&:active{
+          border-color: @white;
+        }
+      }
+    }
+  }
+}
+footer{
+  .version-heart {
+    max-width: @versionheartwidth;
+    width: @versionheartwidth;
+    margin: 0 auto;
+    color:@white;
+    .about-us-links{
+      display: flex;
+      padding: 30px 0 15px;
+      .us-links{
+        flex: 1;
+        .aboutus-yjfk{
+          div{
+            display: inline-block;
+            cursor: pointer;
+          }
+          div + div{
+            margin-left: 15px;
+          }
+        }
+        .youqinglianjie{
+          padding-top: 10px;
+          div{
+            cursor: pointer;
+            display: inline-block;
+          }
+          div + div{
+            margin-left: 15px;
+          }
+        }
+      }
+      .name-tel{
+        text-align: right;
+        .name{
+          font-size: 18px;
+          letter-spacing: 2px;
+          padding: 15px 0;
+        }
+        .tel{
+          font-size: 14px;
+          padding: 15px 0;
+        }
+      }
+    }
+    .beian{
+      padding: 30px 0;
+      font-size: 14px;
+      color:@white;
+      text-align: center;
+    }
+  }
+}

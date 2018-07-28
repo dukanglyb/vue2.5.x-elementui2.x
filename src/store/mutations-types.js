@@ -1,0 +1,27 @@
+export const ASIDE_FOLDED = 'ASIDE_FOLDED'
+
+export const SET_MENU_ACTIVE = 'SET_MENU_ACTIVE'
+
+export const SET_MENU_OPEN_NAME_LIST = 'SET_MENU_OPEN_NAME_LIST'
+
+export const SET_MENU_LIST = 'SET_MENU_LIST'
+
+export const SET_BREADCRUMB_LIST = 'SET_BREADCRUMB_LIST'
+
+export const LOADING_FLAG = 'LOADING_FLAG'
+
+export const IS_FIRST_LOGIN = 'IS_FIRST_LOGIN'
+
+export const COMPANY_INFO = 'COMPANY_INFO'
+
+export const IS_FIRST_USE = 'IS_FIRST_USE'
+
+export const ACCOUNT_PASSWORD = 'ACCOUNT_PASSWORD'
+
+export const TABS_VIEWS = 'TABS_VIEWS'
+
+export const TAB_ACTIVE_NAME = 'TAB_ACTIVE_NAME'
+
+export const ADD_TABS_VIEWS = 'ADD_TABS_VIEWS'
+
+export const DEL_TABS_VIEWS = 'DEL_TABS_VIEWS' 
